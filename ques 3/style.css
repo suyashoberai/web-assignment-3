@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .resume-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  p {
+    margin-bottom: 5px;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  /* Flexbox */
+  .resume-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skills-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+
+  .skill {
+    flex-basis: 48%; /* 2 columns on larger screens */
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skill span {
+    width: 100px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .skill-bar {
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 600px) {
+    .resume-container {
+      padding: 10px;
+    }
+  
+    .skill {
+      flex-basis: 100%; /* will Switch to one column for smaller screens */
+    }
+  
+    section {
+      padding: 10px;
+    }
+  }
+  

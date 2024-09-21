@@ -1,0 +1,100 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 300px;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Light-box Hover */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .card .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+ 
+  .card .description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    overflow-wrap: break-word; /* used to break text correctly */
+    margin-bottom: 15px;
+  }
+  
+ 
+  .card .read-more {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+ 
+
+  .card .read-more:hover {
+    color: #207ce6;
+  }
+  
+  .card .read-more:active {
+    color: #1695df;
+  }
+  
+
+  .card::before, .card::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(66, 109, 247, 0.382);
+    z-index: -1;
+    transition: transform 0.3s ease;
+  }
+  
+  .card::before {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .card::after {
+    bottom: -30px;
+    right: -30px;
+  }
+  
+  /* Animation on Hovering */
+  .card:hover::before {
+    transform: translate(-10px, -10px);
+  }
+  
+  .card:hover::after {
+    transform: translate(10px, 10px);
+  }
+  

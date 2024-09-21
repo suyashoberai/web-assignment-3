@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+
+header {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+
+nav {
+    background-color: #4a90e2;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #367bb7;
+    border-radius: 5px;
+}
+
+
+main {
+    width: 70%;
+    float: left;
+    margin-bottom: 30px;
+}
+
+
+.post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+    font-size: 2em;
+    color: #4a90e2;
+    margin-bottom: 20px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+
+aside {
+    width: 25%;
+    float: right;
+    background-color: #ffefef;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+aside h3 {
+    font-size: 1.6em;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin-bottom: 10px;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+aside ul li a:hover {
+    color: #ff6b6b;
+}
+
+aside p {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.9em;
+    margin-top: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}

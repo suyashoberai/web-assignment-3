@@ -1,0 +1,70 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .featured-post {
+    max-width: 600px; 
+    background-color: white;
+    border: 2px solid #ddd;
+    padding: 20px;
+    margin: 20px;
+    position: relative; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .featured-post h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .featured-post img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+  
+  .featured-post .summary {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 50px; 
+  }
+  
+
+  .read-more {
+    position: absolute; /* Absolute positioning inside the relative parent */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .read-more:hover {
+    background-color: #45a049;
+  }
+  
+  /* responsiveness */
+  @media (max-width: 500px) {
+    .featured-post {
+      padding: 15px;
+    }
+  
+    .read-more {
+      padding: 8px 15px;
+      bottom: 15px;
+      right: 15px;
+    }
+  }
+  
